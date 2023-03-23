@@ -6,10 +6,8 @@ body, *{
 
 .header{
     position: relative;
-    /* display: flex;*/
-    /* align-items: center; */
-    /*justify-content: center; */
 }
+
 .container1{
     height: 100vh;
     display: flex;
@@ -20,13 +18,10 @@ body, *{
     width: 33.33%;
     background-color: rgb(24, 58, 58);
     height: 100%;
-    border: 1px solid black !important;
-}
-
-.container2{
-    position: absolute;
-    /* display: inline; */
-    /* margin: 1.8rem; */
+    background-image: url('./images/kyle-johnson.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .heading-content{
@@ -40,7 +35,7 @@ body, *{
     width: 6.063rem;
     height: 5rem;
     background-size: cover;
-    margin-left: 6.5rem;
+    margin-left: 20%;
 }
 
 .navbar{
@@ -56,13 +51,16 @@ body, *{
     color: white;
 }
 
-.signBtn{
+.signup{
     border-radius: 2.5rem;
-    padding:1rem 3.4rem;
+    padding:1rem 2rem;
     color: white;
+    background-color: none;
 }
 
-.c-01{
+.login{
+    border-radius: 2.5rem;
+    padding:1rem 3rem;
     background-color: white;
     color: black;
 }
@@ -70,4 +68,74 @@ body, *{
 .btnOption{
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-right: 20%;
+}
+
+#search-icon{
+    width: 1.386rem;
+    height: 1.386rem;
+    padding: 0 1rem;
+}
+
+.container2{
+    margin: 6.375rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6.5rem;
+}
+
+.feature-label{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.countries-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-view{
+    border-radius: 2.5rem;
+    padding:1rem 3rem;
+    border: 1px solid black;
+}
+
+.container3{
+    margin: 6.375rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6.5rem;
+}
+
+.image-container{
+    background-color: blanchedalmond;
+    height: 28.25rem;
+}
+
+.countries-content{
+    width: 33.33%;
+}
+
+.bg-01{
+    background-image: url("./images/huper-by-joshua-a.jpg");
+}
+
+.bg-02{
+    background-image: url("./images/jordan-steranka.jpg");
+}
+
+.bg-03{
+    background-image: url("./images/michael-krahn.jpg");
 }
