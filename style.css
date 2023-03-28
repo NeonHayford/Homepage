@@ -98,12 +98,15 @@ body, *{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /* vertical-align: middle; */
 }
 
 .countries-view{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5.625rem;
 }
 
 .btn-view{
@@ -122,10 +125,26 @@ body, *{
 .image-container{
     background-color: blanchedalmond;
     height: 28.25rem;
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.countries-content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.countries-content-text{
+    font-size: 2.25rem;
 }
 
 .countries-content{
     width: 33.33%;
+}
+.countries-content:nth-child(2){
+    padding: 0 25px;
 }
 
 .bg-01{
