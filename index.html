@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="/script.js"></script>
     <title>Document</title>
 </head>
-<body>
     <div class="header">
         <div class="container1">
             <div class="image-content" id="turn1">
@@ -27,7 +27,9 @@
             <div class="image-content"  id="turn3">
                 <div class="btn-content">
                     <div class="btnOption">
-                        <img id="search-icon" src="./images/search.png"/>
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                            <path d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z" fill="white"/>
+                        </svg>
                         <div class="signup">Signup</div>
                         <div class="login">Login</div>
                     </div>
@@ -68,21 +70,21 @@
             </div>
         </div>
     </div>
-    <div class="container3">
+    <div class="container4">
         <div class="countries-view">
             <div class="">
                 <h1>Top Locations to Explore</h1>
                 <label for="">Here are some of the most visited places in 2023</label>
             </div>
-            <div style="display: flex; flex-direction: row;">
-                <div class="btn-view">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 8rem;">
+                <div class="btn-view01">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M359 814 120 575l239-239 43 43-166 166h604v60H236l166 166-43 43Z"/>
                     </svg>
                 </div>
-                <div class="btn-view">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                <div class="btn-view01">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="m561 814-43-42 168-168H160v-60h526L517 375l43-42 241 241-240 240Z" fill="white"/>
                     </svg>
                 </div>
             </div>
@@ -99,6 +101,205 @@
             <div class="countries-content">
                 <div class="image-container bg-01"></div>
                 <h3 for="">The Blyde River Canyon</h3>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container5">
+        <div class="recent-search-view">
+            <div class="">
+                <h1>Your Recent Searches</h1>
+                <label for="">Here are some of the places you have searched</label>
+            </div>
+        </div>
+        <div class="scrolling-container snap-all">
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="element-scroll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" fill="grey"/>
+                    </svg>
+                    <div>
+                        <h4 style="font-weight: bold;">Burj Khalifa</h4>
+                        <h4>Dubai, UAE</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="location-view">
+            <div class="">
+                <h1>Locations based on search</h1>
+                <label for="">Check out fun places based on your searches</label>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 8rem;">
+                <div class="btn-view01">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="M359 814 120 575l239-239 43 43-166 166h604v60H236l166 166-43 43Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="btn-view01">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                        <path d="m561 814-43-42 168-168H160v-60h526L517 375l43-42 241 241-240 240Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="countries-content-container">
+            <div class="countries-content">
+                <div class="image-container bg-03"></div>
+                <div>
+                    <label>Dubai, UAE</label>
+                    <h3 for="">The Shibuya</h3>
+                </div>
+            </div>
+            <div class="countries-content">
+                <div class="image-container bg-02"></div>
+                <div>
+                    <label>Vancouver, Canada</label>
+                    <h3 for="">Published On Main</h3>
+                </div>
+            </div>
+            <div class="countries-content">
+                <div class="image-container bg-01"></div>
+                <div>
+                    <label>Baños de Agua Santa, Ecuador</label>
+                    <h3 for="">The Hot Springs of Baños</h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container6">
+        <div class="countries-view">
+            <div class="">
+                <h1>Plan your best trip ever</h1>
+                <label for="">Making the Most of Your Travel Experience in 2023</label>
+            </div>
+            <div class="btn-view">View All Destination</div>
+        </div>
+        <div class="Sories-content-container">
+            <div class="Article-content">
+                <div class="image-container bg-01"></div>
+                <div>
+                    <div></div>
+                    <div>
+                        <h2>A Wonderful Journey to India</h2>
+                        <p>I had always been interested in spirituality, so I  decided to take a year-long journey to India to explore various religious practices and traditions. </p>
+                        <div>
+                            <a href="">Read Full Post</a>
+                            <img src="/images/svg/arrow_outward.svg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Article-content">
+                <div class="image-container bg-02"></div>
+                <div>
+                    <div></div>
+                    <div>
+                        <h2>A Solo Trip Across Europe</h2>
+                        <p>I had just graduated from college and decided to take a six-month solo trip across Europe before starting my career. I backpacked through 15 different countries, staying in hostels and meeting people.</p>
+                        <div>
+                            <a href="">Read Full Post</a>
+                            <img src="/images/svg/arrow_outward.svg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Article-content">
+                <div class="image-container bg-03"></div>
+                <div>
+                    <div></div>
+                    <div>
+                        <h2>11 Best Places to visit in Nepal</h2>
+                        <p>It was a beautiful spring morning when I arrived in Kathmandu, the capital city of Nepal. As soon as I stepped out of the airport, I was struck by the vibrant colors, the chaos of the streets.</p>
+                        <div>
+                            <a href="">Read Full Post</a>
+                            <img src="/images/svg/arrow_outward.svg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Article-content">
+                <div class="image-container bg-03"></div>
+                <div>
+                    <div></div>
+                    <div>
+                        <h2>The Petrin Hill</h2>
+                        <p>I visited Prague, the beautiful capital city of the Czech Republic, and one of my favorite places in the city was the Petrin Hill. The Petrin Hill is a green oasis in the heart of Prague.</p>
+                        <div>
+                            <a href="">Read Full Post</a>
+                            <img src="/images/svg/arrow_outward.svg" alt=""/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -55,4 +55,11 @@
   setInterval(() => {
     return changeImage3()
   }, 15000);
+
+  const btnView = document.querySelectorAll('.btn-view01');
+  btnView[0].style.backgroundColor = '#CDCCCC';
+  btnView[1].style.backgroundColor='#4169E1';
+  btnView[2].style.backgroundColor = '#CDCCCC';
+  btnView[3].style.backgroundColor='#4169E1';
+  console.log(btnView);
 })
